@@ -1,0 +1,22 @@
+How would you design dependency injection container.
+How would you initialize a Bean. dependency initialization.
+k array sort.
+remove duplicates from string
+
+Security how to secure headers. how to transmit data that can't be spoofed.
+Lets db connection are limited total 300 connections possible.
+
+3 service instances are running each has 100. now traffic increasses
+and 1 more instance comes up. How will you redistribute the existing connections.
+
+Kafka vs RabbitMQ advantages and disadvantages.
+Increase level of parallelism in kafka dynamically.
+
+Spring boot Autoconfiguarion how spring.factories works internally.
+would including a dependency will allow you to autowire component in that dependency.
+
+How spring works internally. How do spring abstraction comes in place.
+What you need to do in order to customize existing spring architecture.
+
+Knights Tour Minimum Hops needed to reach from 1 position to another. Time complexity worst case best case scenarios.
+

@@ -1,3 +1,7 @@
+
+sum of three elements in an array
+spiral traversal convert a matrix 2D to 1D
+
 Diameter of a binary tree
 push odd elements back in linked list.
 Tracing using traceid and spanid.
@@ -8,4 +12,14 @@ m-ary tree lowest common ancestor
 
 Design Cloudflare throttle and rate limiting.
 Design Calculator backend which supports adding custom operation.
+
+write binary tree iterator O(h) space and O(1) time.
+
+
+Three Baskets are Given B1 B2 B3
+
+You need make number of balls in all Baskets as equal.
+Two rules.
+1. You can only double the balls in a basket.
+2. you can transfer the borrowed balls only from one basket.
 

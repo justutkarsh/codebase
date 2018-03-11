@@ -130,6 +130,10 @@ City createGraph(List<String> cities)
 How would you load a set of files in memory as quick as possible a thought questions.?
 Multiple threads etc.
 
+longest common subarray
+
+jobs input and output optimize the process.
+
 
 
 

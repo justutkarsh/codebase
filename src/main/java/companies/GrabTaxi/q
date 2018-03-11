@@ -1,0 +1,14 @@
+Query is slow.
+How would you figure out in mongodb
+
+apache kafka what is a partition. if it crashes it will consume the same message again or what
+kafka consuming interface.
+
+gateway --A
+       --B-C
+
+
+       B and C are non critical service. can their failure affect the critical A service.
+
+
+Two sorted arrays find a sum equals k

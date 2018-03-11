@@ -1,0 +1,16 @@
+There are devices,
+d1,d2,d3.. dn
+There are static hubs  h1,h2, hn
+
+
+whenever a device d1 enters radius r1 of h1 it should trigger loginevent and if goes out should emit logoutevent.
+
+assuming 8k events per seconds device such a system.
+
+suggested kafka based approach but got cofused on timestamp based consumption.
+scenariouls if events are coming out of order.
+
+
+
+There are millions of Customer and transactions happening
+design a transacation management system.
