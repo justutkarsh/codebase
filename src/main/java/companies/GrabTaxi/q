@@ -7,8 +7,42 @@ kafka consuming interface.
 gateway --A
        --B-C
 
-
-       B and C are non critical service. can their failure affect the critical A service.
-
+B and C are non critical service. can their failure affect the critical A service.
 
 Two sorted arrays find a sum equals k
+
+will wait release the lock.
+
+How Can a single message be consumed by multiple consumers in kafka. Different Group Ids.
+
+Design a System.
+
+a User on 5 successful top ups will be eligible for a special discount.
+Only first 1000 users will get those special discount.
+
+Design a LRU make it distributed and scalable thread-safe.
+
+Design a file Processing System which can take input from multiple data sources convert it and store it
+in a common file format.
+
+What is Optimistic Locking.
+
+Design linked in Feed Processing System.
+
+Find the number of ways tokenizing a continuous string into valid sentences given a dictionary
+ilikecode -> i like code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
