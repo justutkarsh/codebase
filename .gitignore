@@ -1,2 +1,13 @@
 /target/
 /bin/
+/gradle
+.gradle
+build
+codebase.ipr
+codebase.iws
+src/main/java/companies/target/
+src/test/
+/build/
+/gradle/
+/.gradle/
+/.idea/

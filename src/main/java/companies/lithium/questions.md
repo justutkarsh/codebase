@@ -21,9 +21,16 @@ Object getDocuments(Set<int> conversationIds )
 
    for(int i:conversationIds)
    {
-
-
-
    }
-
 }
+
+
+Calculate the running median of a stream
+
+interface  add/calculate.
+
+add(11)     calculate() =  11
+add(5)      calculate() =  8     (11+5)/2 
+add(7)      calculate() =  7 
+ 
+ 
