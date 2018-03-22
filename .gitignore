@@ -5,8 +5,6 @@
 build
 codebase.ipr
 codebase.iws
-src/main/java/companies/target/
-src/test/
 /build/
 /gradle/
 /.gradle/
