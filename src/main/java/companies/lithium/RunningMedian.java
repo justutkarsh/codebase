@@ -5,11 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 
-/**
- * Created by utkarsh on 21/03/18.
- */
+
 public class RunningMedian {
 
+  private Double currentMedian;
   //11,4,5,6,2,1,0,9,16
   /*
  11                11
@@ -26,11 +25,35 @@ public class RunningMedian {
    */
   private PriorityQueue<Double> maxHeap = new PriorityQueue<>();
   private PriorityQueue<Double> minHeap = new PriorityQueue<>(Collections.reverseOrder());
-  Double currentMedian;
+
+  public static void main(String[] args) {
+    RunningMedian rm = new RunningMedian();
+    List<Double> list = Arrays.asList(11d, 4d, 5d, 6d, 2d, 1d, 0d, 9d, 16d);
+    list.forEach(integer -> {
+      rm.offer(integer);
+      System.out.println(rm.median());
+    });
+  }
+
+  private int offer2(Double e) {
+    Double max = maxHeap.peek();
+    Double min = minHeap.peek();
+    Double med = e;
+    if (maxHeap.size() > minHeap.size() && max != null) {
+      med = max;
+    } else if (maxHeap.size() < minHeap.size() && min != null) {
+      med = min;
+    }
+
+    if (e < med) {
+      minHeap.add(e);
+    } else {
+      maxHeap.add(e);
+    }
+    return 0;
+  }
 
   private void offer(Double e) {
-
-
     int size = maxHeap.size() + minHeap.size();
     if (size == 0) {
       currentMedian = e;
@@ -68,20 +91,9 @@ public class RunningMedian {
     }
   }
 
-  public Double median() {
-
+  private Double median() {
     System.out.println("max-"+Arrays.deepToString(maxHeap.toArray()));
     System.out.println("min-"+Arrays.deepToString(minHeap.toArray()));
-
-
     return currentMedian;
-  }
-
-
-  public static void main(String[] args) {
-    RunningMedian rm = new RunningMedian();
-    List<Double> list = Arrays.asList(11d,4d,5d,6d,2d,1d,0d,9d,16d);
-    list.stream().forEach(integer -> {rm.offer(integer);
-      System.out.println(rm.median());});
   }
 }
