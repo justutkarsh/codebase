@@ -1,10 +1,7 @@
 package interviewbit;
 
-import treesngraphs.BTreePrinter;
-import treesngraphs.BTreePrinterTest;
-import treesngraphs.BinaryTree;
-import treesngraphs.Node;
-
+import datastructures.treesngraphs.BTreePrinter;
+import datastructures.treesngraphs.Node;
 import java.util.Arrays;
 import java.util.List;
 

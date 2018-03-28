@@ -18,7 +18,7 @@ public class SortedWordFrequency {
     }
 
     /*
-      for efficient Storage Use Trie & Heap if we need to get at the most finite top words
+      for efficient Storage Use datastructures.trie & Heap if we need to get at the most finite top words
       for optimal time we can use Heap and map to store words.
 
      */
