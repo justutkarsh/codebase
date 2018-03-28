@@ -1,13 +1,11 @@
-package companies.EMC2.Text;
+package companies.emc2;
 
 import java.security.Permission;
 
 public class Main
 {
 
-  public static void main(String... argv)
-    throws Exception
-  {
+  public static void main(String... argv) {
     System.setSecurityManager(new SecurityManager() {
 
       @Override

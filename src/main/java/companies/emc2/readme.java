@@ -1,4 +1,4 @@
-package companies.EMC2.Text;
+package companies.emc2;
 
 /**
  *

@@ -1,4 +1,4 @@
-package companies.AmazonSets;
+package companies.amazon;
 
 import java.util.ArrayList;
 import java.util.Arrays;

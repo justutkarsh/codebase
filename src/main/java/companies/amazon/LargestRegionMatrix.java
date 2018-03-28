@@ -1,15 +1,13 @@
-package companies.AmazonSets;
+package companies.amazon;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by utkarsh on 12-09-2016.
  */
 // Java program to count islands in boolean 2D matrix
-import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 class Islands {
     //No of rows and columns

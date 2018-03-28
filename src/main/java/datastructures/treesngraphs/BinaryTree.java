@@ -12,7 +12,6 @@ public class BinaryTree<T extends Comparable<?>> {
 
   public static void main(String[] args) {
 
-
   }
 
   @Deprecated
@@ -56,7 +55,7 @@ public class BinaryTree<T extends Comparable<?>> {
     if (root == null) {
       return;
     }
-    System.out.println(root.data);
+    System.out.print(root.data + ",");
     preOrder(root.left);
     preOrder(root.right);
   }
@@ -67,7 +66,7 @@ public class BinaryTree<T extends Comparable<?>> {
     }
 
     preOrder(root.left);
-    System.out.println(root.data);
+    System.out.print(root.data + ",");
     preOrder(root.right);
   }
 
@@ -78,7 +77,7 @@ public class BinaryTree<T extends Comparable<?>> {
 
     preOrder(root.left);
     preOrder(root.right);
-    System.out.println(root.data);
+    System.out.print(root.data + ",");
   }
 
   static int height(Node<Integer> root) {
@@ -214,14 +213,14 @@ public class BinaryTree<T extends Comparable<?>> {
     return node;
   }
 
-  static int commonAncestor(Node<Integer> a, Node<Integer> b,
+  static int commonAncestorInt(Node<Integer> a, Node<Integer> b,
       Node<Integer> root) {
     if (root == null) {
       return 0;
     }
 
-    int left = commonAncestor(a, b, root.left);
-    int right = commonAncestor(a, b, root.right);
+    int left = commonAncestorInt(a, b, root.left);
+    int right = commonAncestorInt(a, b, root.right);
 
     if ((root == a || root == b) && (left == 1 || right == 1)) { //found one node
       return 2;
@@ -236,6 +235,30 @@ public class BinaryTree<T extends Comparable<?>> {
     } else {
       return 0;
     }
+
+  }
+
+  static public Node lowestCommonAncestor(Node root, Node p, Node q) {
+    if (root == null || root == p || root == q) {
+      return root;
+    }
+    Node left = lowestCommonAncestor(root.left, p, q);
+    Node right = lowestCommonAncestor(root.right, p, q);
+    return left == null ? right : right == null ? left : root;
+  }
+
+  static Node commonAncestor(Node<Integer> a, Node<Integer> b,
+      Node<Integer> root) {
+
+    if (root == null || root == a || root == b) {
+      return root;
+    }
+
+    Node left = commonAncestor(a, b, root.left);
+    Node right = commonAncestor(a, b, root.right);
+
+    return left == null ? right : (right == null ? left : root);
+
 
   }
 
@@ -477,9 +500,9 @@ public class BinaryTree<T extends Comparable<?>> {
       return root.data;
     }
     int leftData, rightData;
-      leftData = replaceWithLeftSubtreeSum(root.getLeft());
+    leftData = replaceWithLeftSubtreeSum(root.getLeft());
 
-      rightData = replaceWithLeftSubtreeSum(root.getRight());
+    rightData = replaceWithLeftSubtreeSum(root.getRight());
 
     root.data += root.getLeft().getData();
 
@@ -487,13 +510,13 @@ public class BinaryTree<T extends Comparable<?>> {
   }
 
 
+  void btree2Dll(Node<Integer> root) {
 
-  void btree2Dll(Node<Integer> root){
-
-    if(root == null) return;
+    if (root == null) {
+      return;
+    }
 
     btree2Dll(root.left);
-
 
     btree2Dll(root.right);
   }

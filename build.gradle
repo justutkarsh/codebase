@@ -7,8 +7,8 @@ version = '0.0.1'
 
 description = """"""
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+//sourceCompatibility = 1.8
+//targetCompatibility = 1.8
 
 
 

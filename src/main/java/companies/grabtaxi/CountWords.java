@@ -1,4 +1,4 @@
-package companies.GrabTaxi;
+package companies.grabtaxi;
 
 import java.util.ArrayList;
 import java.util.HashSet;

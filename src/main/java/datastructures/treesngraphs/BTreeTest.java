@@ -1,5 +1,11 @@
 package datastructures.treesngraphs;
 
+import static datastructures.treesngraphs.BinaryTree.commonAncestor;
+import static datastructures.treesngraphs.BinaryTree.inOrder;
+import static datastructures.treesngraphs.BinaryTree.postOrder;
+import static datastructures.treesngraphs.BinaryTree.preOrder;
+
+
 public class BTreeTest {
 
   public static Node<Integer> generateTree2() {
@@ -94,17 +100,11 @@ public class BTreeTest {
     return root1;
   }
 
-
   public static void main(String[] args) {
 
-    BTreePrinter.printNode(BTreeTest.generateTree2());
-
-    // printTree(root);
-    // preOrder(root);
-    // inOrder(root);
-    // postOrder(root);
-
-    // BTreePrinter.printNode(root);
+    BTreeTest bt = new BTreeTest();
+    //bt.testPrintTree();
+    bt.testCommonAncestor();
 
     // System.out.println(isBalanced(root));
 
@@ -153,6 +153,36 @@ public class BTreeTest {
 
     // commonAncestor(pnn31, pnn23, root1);
     // System.out.println(ancestorNode.data);
+  }
+
+  private void testPrintTree() {
+
+    Node root = BTreeTest.generateTree2();
+    BTreePrinter.printNode(root);
+
+    preOrder(root);
+    System.out.println();
+    inOrder(root);
+    System.out.println();
+    postOrder(root);
+  }
+
+  private void testCommonAncestor() {
+
+    Node root = BTreeTest.generateTree2();
+    BTreePrinter.printNode(root);
+
+    Node a = root.left.right.right;
+    System.out.println(a.data);
+    Node b = root.right.right.left;
+    System.out.println(b.data);
+    // Node ca = lowestCommonAncestor(root, a, b);
+
+    Node ca = commonAncestor(a, b, root);
+
+    System.out.println(ca.data);
+
+
   }
 }
 

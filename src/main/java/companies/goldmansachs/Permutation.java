@@ -1,4 +1,4 @@
-package companies.Goldmansachs;
+package companies.goldmansachs;
 
 import java.util.ArrayList;
 import java.util.List;
