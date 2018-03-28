@@ -15,3 +15,28 @@ what is arp
 what is cap theorem.
 
 what is vector clock
+
+
+find shortest path between two nodes in a tree.
+
+aggregators design category   a_id  key_id b_id key_id
+
+Exception throwing.
+
+Class.forName() static block will register the driver.
+
+DriverManager.register()
+
+basic string pool
+
+why kafka why not rabbit mq, consumer is taking a lot of time what to do.
+
+Bean annotation over method how it internally registers.
+
+@Configuration how it works.
+
+NextGreaterElement for each element.
+
+
+
+

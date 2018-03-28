@@ -14,3 +14,57 @@ scenariouls if events are coming out of order.
 
 There are millions of Customer and transactions happening
 design a transacation management system.
+
+
+     1. Authentication   — Normal/Social    email/mobile
+     2. Wishlists   —>   Integration with product apis
+     3. ETL  -->   backward compatibility with old apis
+     4. Prescriptions.
+     5. Communication & Events.
+     6. Ditto & Image Interfacing.
+     7. Default Login Dual login.
+     8. Referral
+     9. Betaout apis
+
+
+
+Android / React/  Angular   — (MD5.encode(password),email/mobile)
+
+ —>   cloudflare —>  session uuid (Session Service)
+
+          aid—skldjfldksjf-lkdjflkf-lklkdlf       son
+
+
+                  user/session/gateway service  —>   product-service { list <category>  category<product>
+                                                                              -> cart-service->  order-payment->     order service->
+
+
+
+
+
+                                                   Lift Service.
+
+
+                                                Lift       Building      Floor
+
+                                            State
+                                            currentfloor
+
+                                           Direction
+
+                                          LiftInterface
+                                           Buttons
+                                           stop
+                                           fan
+                                           light
+
+
+
+LiftManager{
+
+Floors
+moveup
+movedown
+stop
+stopatfloor
+
