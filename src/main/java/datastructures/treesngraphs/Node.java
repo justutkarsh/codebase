@@ -10,8 +10,8 @@ import lombok.ToString;
 @RequiredArgsConstructor
 public class Node<T extends Comparable<?>> {
 
-	protected Node<T> left;
-	protected Node<T> right;
+	public Node<T> left;
+	public Node<T> right;
 	@NonNull
-	protected T data;
+	public T data;
 }

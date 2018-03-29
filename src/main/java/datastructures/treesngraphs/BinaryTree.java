@@ -247,20 +247,6 @@ public class BinaryTree<T extends Comparable<?>> {
     return left == null ? right : right == null ? left : root;
   }
 
-  static Node commonAncestor(Node<Integer> a, Node<Integer> b,
-      Node<Integer> root) {
-
-    if (root == null || root == a || root == b) {
-      return root;
-    }
-
-    Node left = commonAncestor(a, b, root.left);
-    Node right = commonAncestor(a, b, root.right);
-
-    return left == null ? right : (right == null ? left : root);
-
-
-  }
 
   @Deprecated
   static int cA(Node root, Node a, Node b) {

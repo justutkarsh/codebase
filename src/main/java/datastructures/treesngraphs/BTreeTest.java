@@ -1,7 +1,7 @@
 package datastructures.treesngraphs;
 
-import static datastructures.treesngraphs.BinaryTree.commonAncestor;
 import static datastructures.treesngraphs.BinaryTree.inOrder;
+import static datastructures.treesngraphs.BinaryTree.lowestCommonAncestor;
 import static datastructures.treesngraphs.BinaryTree.postOrder;
 import static datastructures.treesngraphs.BinaryTree.preOrder;
 
@@ -178,7 +178,7 @@ public class BTreeTest {
     System.out.println(b.data);
     // Node ca = lowestCommonAncestor(root, a, b);
 
-    Node ca = commonAncestor(a, b, root);
+    Node ca = lowestCommonAncestor(a, b, root);
 
     System.out.println(ca.data);
 
